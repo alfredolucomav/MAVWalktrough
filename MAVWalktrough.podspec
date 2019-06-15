@@ -13,15 +13,13 @@ Pod::Spec.new do |s|
   s.license = { :type => "MIT", :file => "LICENSE" }
 
   # 4
-  s.author = { "aluco" => "aluco100@gmail.com" }
+  s.author = { "alfredolucomav" => "alfredo.luco@mavericks.cool" }
 
   # 5
-  # TODO
-  s.homepage = "https://github.com/aluco100/SVDismissableProgressHUD"
+  s.homepage = "https://github.com/alfredolucomav/MAVWalktrough"
 
   # 6
-  # TODO
-  s.source = { :git => "https://github.com/aluco100/SVDismissableProgressHUD", :tag => "0.0.6" }
+  s.source = { :git => "https://github.com/alfredolucomav/MAVWalktrough", :tag => "0.0.1" }
 
   # 7
   s.ios.frameworks = 'UIKit', 'Foundation'
