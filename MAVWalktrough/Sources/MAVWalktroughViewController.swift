@@ -17,7 +17,7 @@ open class MAVWalktroughViewController: UIViewController {
         }
     }
     
-    private var enterTrigger: (()->Void)? = nil
+    private var enterTrigger: ((_ vc: UIViewController)->Void)? = nil
     
     private var pageViewController: UIPageViewController = {
         var vc = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
@@ -72,7 +72,7 @@ open class MAVWalktroughViewController: UIViewController {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
     }
     
-    public convenience init(assets: [MAVWalktroughAsset],trigger: @escaping (() -> Void)){
+    public convenience init(assets: [MAVWalktroughAsset],trigger: @escaping ((_ vc: UIViewController) -> Void)){
         self.init(nibName: String(describing: MAVWalktroughViewController.self), bundle: Bundle(for: MAVWalktroughViewController.self))
         self.loadViewIfNeeded()
         self.assets = assets
@@ -131,7 +131,7 @@ open class MAVWalktroughViewController: UIViewController {
     }
     
     @objc func enter(){
-        self.enterTrigger?()
+        self.enterTrigger?(self)
     }
     
 }
