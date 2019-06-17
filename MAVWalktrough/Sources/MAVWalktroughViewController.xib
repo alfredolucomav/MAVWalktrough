@@ -37,7 +37,7 @@
                     <state key="normal" title="Ingresar"/>
                 </button>
                 <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="aJh-gJ-XN1">
-                    <rect key="frame" x="187.5" y="631" width="39" height="37"/>
+                    <rect key="frame" x="187.5" y="651" width="39" height="37"/>
                     <color key="pageIndicatorTintColor" red="0.61568627450000002" green="0.64313725489999995" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
                 </pageControl>
             </subviews>
@@ -49,7 +49,7 @@
                 <constraint firstItem="ipo-oL-GDW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="bI9-Hc-Jrd"/>
                 <constraint firstItem="ipo-oL-GDW" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="32" id="d2U-4d-gUZ"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ipo-oL-GDW" secondAttribute="trailing" constant="24" id="okc-1c-gxp"/>
-                <constraint firstItem="vE5-Gg-cSB" firstAttribute="top" secondItem="aJh-gJ-XN1" secondAttribute="bottom" constant="120" id="uEf-5K-fMd"/>
+                <constraint firstItem="vE5-Gg-cSB" firstAttribute="top" secondItem="aJh-gJ-XN1" secondAttribute="bottom" constant="100" id="uEf-5K-fMd"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="vE5-Gg-cSB" secondAttribute="bottom" constant="24" id="wpa-oZ-nWO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

@@ -62,7 +62,7 @@ open class MAVWalktroughViewController: UIViewController {
     }
     
     //MARK: - IBOUtlets
-    @IBOutlet weak var enterButton: MAVWalktroughButton!
+    @IBOutlet public weak var enterButton: MAVWalktroughButton!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var logoImageView: UIImageView!
     
