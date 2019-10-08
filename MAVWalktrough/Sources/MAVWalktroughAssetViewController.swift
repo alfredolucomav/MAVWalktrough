@@ -28,6 +28,12 @@ open class MAVWalktroughAssetViewController: UIViewController {
         }
     }
     
+    open var backgroundColor: UIColor = UIColor.white{
+        didSet{
+            self.view.backgroundColor = backgroundColor
+        }
+    }
+    
     override open func awakeFromNib(){
         super.awakeFromNib()
     }
