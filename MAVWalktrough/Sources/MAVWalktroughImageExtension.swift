@@ -10,13 +10,14 @@ import Foundation
 import UIKit
 
 extension UIView {
-    func addBackground(named: String, contentMode: UIView.ContentMode = .scaleAspectFill) {
+    func addBackground(named: String, contentMode: UIView.ContentMode = .scaleAspectFill, backgroundColor: UIColor) {
         // screen width and height:
         let width = self.bounds.size.width
         let height = self.bounds.size.height
         
         let imageViewBackground = UIImageView(frame: CGRect(x:0, y: 0, width: width, height: height))
         imageViewBackground.image = UIImage(named: named)
+        imageViewBackground.backgroundColor = backgroundColor
         
         // you can change the content mode:
         imageViewBackground.contentMode = contentMode

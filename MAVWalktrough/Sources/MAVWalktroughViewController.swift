@@ -128,7 +128,7 @@ open class MAVWalktroughViewController: UIViewController {
         let vc = MAVWalktroughAssetViewController(nibName: String(describing: MAVWalktroughAssetViewController.self), bundle: Bundle(for: MAVWalktroughAssetViewController.self))
         vc.loadViewIfNeeded()
         vc.titleLabel.text = self.assets[atIndex].title
-        vc.view.addBackground(named: self.assets[atIndex].imageName,contentMode: self.imageContentType)
+        vc.view.addBackground(named: self.assets[atIndex].imageName,contentMode: self.imageContentType, backgroundColor: self.backgroundColor)
         vc.index = atIndex
         vc.backgroundColor = self.backgroundColor
         vc.view.backgroundColor = self.backgroundColor
