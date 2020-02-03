@@ -61,6 +61,8 @@ open class MAVWalktroughViewController: UIViewController {
         }
     }
     
+    open var backgroundColor: UIColor = .white
+    
     open var imageContentType: UIView.ContentMode = .scaleAspectFill
     
     //MARK: - IBOUtlets
@@ -127,6 +129,7 @@ open class MAVWalktroughViewController: UIViewController {
         vc.titleLabel.text = self.assets[atIndex].title
         vc.view.addBackground(named: self.assets[atIndex].imageName,contentMode: self.imageContentType)
         vc.index = atIndex
+        vc.view.backgroundColor = self.backgroundColor
         vc.textFont = self.titleFont
         vc.textColor = self.titleColor
         return vc
