@@ -129,6 +129,7 @@ open class MAVWalktroughViewController: UIViewController {
         vc.titleLabel.text = self.assets[atIndex].title
         vc.view.addBackground(named: self.assets[atIndex].imageName,contentMode: self.imageContentType)
         vc.index = atIndex
+        vc.backgroundColor = self.backgroundColor
         vc.view.backgroundColor = self.backgroundColor
         vc.textFont = self.titleFont
         vc.textColor = self.titleColor
