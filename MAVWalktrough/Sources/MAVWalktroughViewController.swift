@@ -116,6 +116,7 @@ open class MAVWalktroughViewController: UIViewController {
         //Agrego los delegados
         self.pageViewController.delegate = self
         self.pageViewController.dataSource = self
+        self.pageViewController.view.backgroundColor = self.backgroundColor
         
         self.enterButton.addTarget(self, action: #selector(enter), for: .touchUpInside)
         // Do any additional setup after loading the view.
