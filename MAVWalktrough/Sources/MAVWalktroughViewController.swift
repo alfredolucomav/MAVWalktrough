@@ -61,6 +61,8 @@ open class MAVWalktroughViewController: UIViewController {
         }
     }
     
+    open var imageContentType: UIView.ContentMode = .scaleAspectFill
+    
     //MARK: - IBOUtlets
     @IBOutlet public weak var enterButton: MAVWalktroughButton!
     @IBOutlet weak var pageControl: UIPageControl!
@@ -123,7 +125,7 @@ open class MAVWalktroughViewController: UIViewController {
         let vc = MAVWalktroughAssetViewController(nibName: String(describing: MAVWalktroughAssetViewController.self), bundle: Bundle(for: MAVWalktroughAssetViewController.self))
         vc.loadViewIfNeeded()
         vc.titleLabel.text = self.assets[atIndex].title
-        vc.view.addBackground(named: self.assets[atIndex].imageName)
+        vc.view.addBackground(named: self.assets[atIndex].imageName,contentMode: self.imageContentType)
         vc.index = atIndex
         vc.textFont = self.titleFont
         vc.textColor = self.titleColor

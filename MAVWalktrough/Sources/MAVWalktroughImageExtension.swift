@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 extension UIView {
-    func addBackground(named: String) {
+    func addBackground(named: String, contentMode: UIView.ContentMode = .scaleAspectFill) {
         // screen width and height:
         let width = self.bounds.size.width
         let height = self.bounds.size.height
@@ -19,7 +19,7 @@ extension UIView {
         imageViewBackground.image = UIImage(named: named)
         
         // you can change the content mode:
-        imageViewBackground.contentMode = .scaleAspectFill
+        imageViewBackground.contentMode = contentMode
         imageViewBackground.clipsToBounds = true
         
         self.addSubview(imageViewBackground)
