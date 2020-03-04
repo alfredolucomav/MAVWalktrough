@@ -24,6 +24,8 @@ open class MAVWalktroughViewController: UIViewController {
         return vc
     }()
     
+    open var titleAlignment: NSTextAlignment = .center
+    
     public var assets: [MAVWalktroughAsset] = []{
         didSet{
             self.pageControl.numberOfPages = assets.count
@@ -67,7 +69,7 @@ open class MAVWalktroughViewController: UIViewController {
     
     //MARK: - IBOUtlets
     @IBOutlet public weak var enterButton: MAVWalktroughButton!
-    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet public weak var pageControl: UIPageControl!
     @IBOutlet weak var logoImageView: UIImageView!
     
     //MARK: - Initializers
@@ -134,6 +136,7 @@ open class MAVWalktroughViewController: UIViewController {
         vc.view.backgroundColor = self.backgroundColor
         vc.textFont = self.titleFont
         vc.textColor = self.titleColor
+        vc.titleLabel.textAlignment = self.titleAlignment
         return vc
     }
     
