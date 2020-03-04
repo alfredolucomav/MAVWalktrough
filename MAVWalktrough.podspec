@@ -28,5 +28,7 @@ Pod::Spec.new do |s|
   # 8
   s.ios.source_files = 'MAVWalktrough/Sources/**/*.*'
 
+  # 9
+  s.swift_versions = ['4.2', '5.0']
 end
 
